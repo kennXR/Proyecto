@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rock+Salt&display=swap');
+@import url('scroll.css');
+
+html{
+
+    box-sizing: border-box;
+    height: 100%;   
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --bg-color: linear-gradient(0deg,#7f0f0f, #ffffff);
+    --text-color: #7f0f0f;
+    --hover-text-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: linear-gradient(0deg,#ffffff, #7f0f0f);
+        --text-color: #ffffff;
+        --hover-text-color: #7f0f0f;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*telefono*/
+    font-size:14px;
+    line-height: 1.4em;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+    font-size: 100%;
+}
+
+/*compu o tablet*/
+@media (min-width: 500px){
+    body{
+        font-size: 16px;
+    }
+}
+
+/*compu grande, escritorio*/
+@media (min-width: 1024px){
+    body{
+        font-size: 18px;
+    }
+}
+
+h1{
+    font-size: 2.5em;
+    line-height: 1.14em;
+}
+
+header{
+    width:100%;
+}
+
+header nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+a{
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.25em .5em;
+    text-transform: uppercase;
+    min-width: 42px;
+}
+
+a:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+article {
+    width: 80%;
+    max-width: 800px;
+    padding: 1em;
+    margin: 0 auto; 
+}
+
+p {
+    max-width: 60ch; 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 90%;
+    min-width: 290px;
+    max-width: 1200px;
+}
+
+nav.container {
+    padding: 1em;
+}
+
+.barrasup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+
+}
+
+.barrasup .logo {
+    flex: 1;
+    text-align: left; 
+    cursor: pointer;
+}
+
+
+.barrasup .logo img{
+    width: 10%;
+    height: auto;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+
+.barrasup .logo img:hover {
+    transform: scale(1.1); 
+  }
+
+.barrasup .redes {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Alinea verticalmente los iconos */
+}
+
+.barrasup .redes a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.barrasup .redes ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Asegura que todos los elementos estén alineados */
+}
+
+.barrasup .redes li {
+    margin-left: 1em;
+    display: flex; /* Para alinear los enlaces correctamente */
+    align-items: center;
+}
+
+.barrasup .redes li a {
+    text-decoration: none;
+    display: flex; /* Asegura que los iconos se alineen correctamente */
+    align-items: center;
+}
+
+.barrasup .redes li a:hover,
+.barrasup .redes li a:focus {
+    background: var(--text-color); /* Fondo toma el color del texto */
+    color: white; /* Cambia el color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+.barrasup .redes a:hover,
+.barrasup .redes a:focus {
+    background: var(--text-color);
+    color: var(--hover-text-color);
+    border-radius: 5px;
+}

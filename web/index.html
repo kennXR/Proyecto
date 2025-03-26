@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETH:website</title>
+    <link rel="icon" type="image/png" href="img/beso3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        function updateFavicon() {
+            const favicon = document.getElementById("favicon");
+            if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                favicon.href = "img/beso1.png";
+            } else {
+                favicon.href = "img/beso3"; 
+            }
+        }
+        updateFavicon();
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateFavicon);
+    </script>
+</head>
+<body>
+    <header class="barrasup">
+        <div class="logo">
+            <ul>
+                <li>
+                    <a href="/" aria-label="Inicio">
+                        <img src="img/beso3.png" alt="logo-kenn" width="100">
+                    </a>
+
+            </ul>
+        </div>
+        <nav>
+            <div class="redes">
+                <li>
+                    <a href="https://www.instagram.com/everything__reth?igsh=MTd2NGo5d2R3NXFnMA%3D%3D&utm_source=qr" target="_blank" title="RETH_IG">IG</a></li>
+                    <a href="mailto:evrying.reth@gmail.com" target="_blank" title="RETH's mail">MAIL</a></li>
+                    <a href="https://x.com/evryingreth?s=11&t=Wix7gZ0NoDhj-zISc3owPw" target="_blank" title="social media X">X</a></li>
+            <ul>
+            </div>
+         </nav>
+    </header>
+    <main class="container">
+        <section class="cuadro">    
+            <div class="cuadro-texto">
+            <header>
+                <h1>RETH</h1>
+                <h2>Creative development</h2>
+            </header>
+            <p>
+                <strong>About me</strong> I´m a computing creative student. Learning about html, css, java. I can be photograper, publisher and illustrator.
+            </p>
+        </section>
+
+
+    </main>
+    <footer>
+        <small>RETH 2025</small>
+    </footer>
+</body>
+</html>
