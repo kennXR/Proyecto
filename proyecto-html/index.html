@@ -9,18 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/custom.css">
-    <script>
-        function updateFavicon() {
-            const favicon = document.getElementById("favicon");
-            if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                favicon.href = "img/beso1.png";
-            } else {
-                favicon.href = "img/beso3"; 
-            }
-        }
-        updateFavicon();
-        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateFavicon);
-    </script>
+    <link id="favicon-light" rel="icon" type="image/png" href="img/beso3.png" media="(prefers-color-scheme: light)">
+<link id="favicon-dark" rel="icon" type="image/png" href="img/beso.png" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <header class="barrasup">
@@ -30,7 +20,7 @@
                     <a href="/" aria-label="Inicio">
                         <img src="img/beso3.png" alt="logo-kenn" width="100">
                     </a>
-
+                </li>
             </ul>
         </div>
         <nav>
@@ -47,8 +37,10 @@
         <section class="cuadro">    
             <div class="cuadro-texto">
             <header>
-                <h1>RETH</h1>
-                <h2>Creative development</h2>
+                <div class="title-container">
+                    <h1>RETH</h1>
+                    <h2>Creative development</h2>
+                </div>
             </header>
             <p>
                 <strong>About me</strong> I´m a computing creative student. Learning about html, css, java. I can be photograper, publisher and illustrator.
